@@ -10,6 +10,11 @@ body {
     height: 30px;
 }
 
+.space-section-aux {
+    width: 100%;
+    height: 100px;
+}
+
 /* --------- Header Section -----------*/
 
 #header-section {
@@ -117,8 +122,8 @@ body {
     display: inline-block;
     height: 360px;
     width: 350px;
-    right: -7em;
-    bottom: -8em;
+    right: -4.9em;
+    bottom: -7.5em;
 }
 
 .hero-info-wrapper {
@@ -149,6 +154,29 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+/* --------- Client Section -----------*/
+
+#client-section {
+    display: block;
+    height: 100px;
+    width: 100%;
+}
+
+.client-section-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 170px;
+    padding-right: 170px;
+    align-items: center;
+}
+
+.clients-logo{
+    filter: grayscale(100%);
+    transform: scale(0.8);
+}
+
 
 @media screen and (max-width: 464px) {
     body {
@@ -286,6 +314,11 @@ body {
         width: 180px;
         right: 0em;
         bottom: -5em;
+    }
+
+    /* --------- Client Section -----------*/
+    #client-section {
+        display: none;
     }
 
 }

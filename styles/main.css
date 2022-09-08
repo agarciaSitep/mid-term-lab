@@ -1,6 +1,7 @@
 body {
     background-color: #E5E5E5;
     font-family: 'Roboto', sans-serif;
+    padding-bottom: 50px;
 }
 
 /* --------- Space Section ------------*/
@@ -172,15 +173,170 @@ body {
     align-items: center;
 }
 
-.clients-logo{
+.clients-logo {
     filter: grayscale(100%);
     transform: scale(0.8);
 }
 
+/* --------- Recent Projects Section -----------*/
+
+#projects-section {
+    display: block;
+    height: 100px;
+    padding-left: 170px;
+    padding-right: 170px;
+    height: fit-content;
+}
+
+#projects-section h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.project-cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-card {
+    background-color: white;
+    box-shadow: 0px 4px 15px 0px #0002;
+    width: 340px;
+    height: 444px;
+}
+
+.pc-image-wrapper {
+    height: 260px;
+    padding: 0;
+}
+
+.pc-image {
+    width: 100%;
+    height: 100%;
+}
+
+.pc-info-wrapper {
+    height: 184px;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pc-info-wrapper h4 {
+    font-size: 24px;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.pc-info-wrapper a {
+    padding-bottom: 30px;
+}
+
+/* --------- Testimonial Section -----------*/
+
+#testimonial-section {
+    height: 630px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.testimonial-black-bg {
+    height: 100%;
+    background-color: #292E47;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial-black-bg h3 {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    text-align: center;
+    padding: 40px;
+}
+
+.testimonial-black-bg p {
+    color: #FFC600;
+    font-size: 24px;
+    display: flex;
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.memoji1 {
+    width: 150px;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+
+.memoji2 {
+    width: 150px;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+}
+
+.memoji3 {
+    width: 150px;
+    position: absolute;
+    bottom: 30px;
+    left: 100px;
+}
+
+.memoji4 {
+    width: 150px;
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+}
+
+.client-info-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 40px;
+    padding: 40px;
+}
+
+.rounded-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+
+.client-name {
+    color: #A2D6F9;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-website {
+    color: #F4F6FC;
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 @media screen and (max-width: 464px) {
     body {
         padding: 0;
+        margin: 0;
     }
 
     /* --------- Header Section -----------*/
@@ -321,4 +477,175 @@ body {
         display: none;
     }
 
+    /* --------- Recent Section -----------*/
+
+    #projects-section {
+        margin-top: 50px;
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    #projects-section h3 {
+        font-size: 30px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-cards-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        background-color: white;
+        margin-bottom: 20px;
+        box-shadow: 0px 4px 15px 0px #0002;
+        width: 80vw;
+        height: 444px;
+    }
+
+    .pc-image-wrapper {
+        height: 260px;
+        padding: 0;
+    }
+
+    .pc-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pc-info-wrapper {
+        height: 184px;
+        margin: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .pc-info-wrapper h4 {
+        font-size: 24px;
+        margin: 0;
+        padding-top: 30px;
+    }
+
+    .pc-info-wrapper p {
+        font-size: 14px;
+        margin-bottom: 0;
+        line-height: 150%;
+    }
+
+    .pc-info-wrapper a {
+        font-size: 13px;
+        text-decoration: none;
+        color: #072AC8;
+        padding-bottom: 30px;
+    }
+
+    /* --------- Testimonial Section -----------*/
+
+    #testimonial-section {
+        height: 700px;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        border: 0px;
+    }
+
+    .testimonial-black-bg {
+        width: 100%;
+        height: 100%;
+        background-color: #292E47;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    .testimonial-black-bg h3 {
+        color: white;
+        font-size: 40px;
+        display: flex;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .testimonial-black-bg p {
+        color: #FFC600;
+        font-size: 24px;
+        display: flex;
+        text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .memoji1 {
+        width: 150px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .memoji2 {
+        width: 150px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .memoji3 {
+        width: 150px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .memoji4 {
+        width: 150px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .client-info-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-bottom: 40px;
+        padding: 40px;
+    }
+
+    .rounded-img {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+
+
+    .client-name {
+        color: #A2D6F9;
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .client-website {
+        color: #F4F6FC;
+        font-size: 13px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
 }

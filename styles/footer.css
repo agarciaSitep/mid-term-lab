@@ -1,4 +1,4 @@
-/* --------- Hero Section -----------*/
+/* --------- CTA Section -----------*/
 #CTA-section {
     height: 400px;
     margin-left: 30px;
@@ -36,18 +36,18 @@
 }
 
 .input-container {
-  position: relative;
-  height: 100%;
+    position: relative;
+    height: 100%;
 }
 
 .input-container img {
-  position: absolute;
-  width: 20px;
-  padding: 10px;
-  top: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: absolute;
+    width: 20px;
+    padding: 10px;
+    top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-container input {
@@ -63,14 +63,89 @@
     margin-right: 10px;
 }
 
+/* --------- Footer Section -----------*/
+
+#footer-section {
+    height: 240px;
+    width: 100%;
+    display: block;
+    padding-left: 170px;
+    padding-right: 170px;
+    box-sizing: border-box;
+}
+
+.footer-section-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav-address {
+    margin-top: 20px;
+    width: 260px;
+    color: #6B708D;
+    font-size: 17px;
+
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-nav-link {
+    color: #292E47;
+    font-size: 17px;
+    line-height: 150%;
+    text-decoration: none;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 50%;
+}
+
+.column-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+}
+
+
+.column-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 50%;
+}
+
+
 @media screen and (max-width: 464px) {
-    /* --------- Hero Section -----------*/
+    /* --------- CTA Section -----------*/
 
     #CTA-section {
         height: 400px;
         margin: 0;
     }
-    
+
     .CTA-yellow-bg {
         height: 100%;
         background-color: #FFC600;
@@ -81,43 +156,43 @@
         align-items: center;
         text-align: center;
     }
-    
+
     .CTA-yellow-bg h2 {
         font-size: 40px;
         font-weight: bold;
         margin: 0;
     }
-    
+
     .CTA-yellow-bg h4 {
         font-size: 20px;
         line-height: 150%;
         font-weight: 300;
         margin-bottom: 50px;
     }
-    
+
     .subscribe-wrapper {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-    
+
     .input-container {
-      position: relative;
-      height: 100%;
+        position: relative;
+        height: 100%;
     }
-    
+
     .input-container img {
-      position: absolute;
-      width: 20px;
-      padding: 0;
-      padding-left: 10px;
-      top: 5px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+        position: absolute;
+        width: 20px;
+        padding: 0;
+        padding-left: 10px;
+        top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
+
     .input-container input {
         border: 0px solid transparent;
         color: #292E47;
@@ -130,5 +205,82 @@
         font-size: small;
         margin-right: 10px;
     }
-    
+
+    /* --------- Footer Section -----------*/
+
+    #footer-section {
+        height: 300px;
+        width: 100vw;
+        display: block;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .footer-section-wrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .company-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .nav-address {
+        margin-top: 20px;
+        width: 260px;
+        color: #6B708D;
+        font-size: 17px;
+
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
+    .footer-nav-link {
+        color: #292E47;
+        font-size: 17px;
+        line-height: 150%;
+        text-decoration: none;
+    }
+
+    .column-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 50%;
+    }
+
+    .column-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 50%;
+    }
+
+
+    .column-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 50%;
+    }
+
 }

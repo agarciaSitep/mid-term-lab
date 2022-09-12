@@ -234,6 +234,16 @@ body {
     margin-bottom: 20px;
 }
 
+.project-card-first {
+    background-color: white;
+    box-shadow: 0px 4px 15px 0px #0002;
+    width: 340px;
+    height: 444px;
+    overflow: auto;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
 .service-card {
     background-color: white;
     box-shadow: 0px 4px 15px 0px #0002;
@@ -581,6 +591,15 @@ body {
     }
 
     .project-card {
+        background-color: white;
+        margin: 0;
+        margin-bottom: 20px;
+        box-shadow: 0px 4px 15px 0px #0002;
+        width: 80vw;
+        height: 444px;
+    }
+
+    .project-card-first {
         background-color: white;
         margin: 0;
         margin-bottom: 20px;

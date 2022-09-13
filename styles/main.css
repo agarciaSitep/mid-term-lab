@@ -54,6 +54,14 @@ body {
     font-weight: 1000;
 }
 
+.nav-projects {
+    font-weight: 400;
+}
+
+.nav-services {
+    font-weight: 400;
+}  
+
 .blue-btn {
     border: 0px solid transparent;
     background-color: #072AC8;

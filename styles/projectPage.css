@@ -4,6 +4,10 @@ body {
     padding-bottom: 50px;
 }
 
+.nav-home {
+    font-weight: 400;
+}
+
 #project-article {
     height: fit-content;
     width: 100vw;   

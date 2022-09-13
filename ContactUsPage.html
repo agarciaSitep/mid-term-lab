@@ -25,9 +25,9 @@
                 <img src="./img/logos/circle.svg" class="navCircleLogo" />
             </div>
             <div class="nav-menu">
-                <a class="nav-home" href="#hero-section" id="nav-home">Home</a>
-                <a class="nav-projects" href="#projects-section" id="nav-projects">Projects</a>
-                <a class="nav-services" href="#services-section" id="nav-services">Services</a>
+                <a class="nav-home" href="./index.html" id="nav-home">Home</a>
+                <a class="nav-projects" href="./projectPage.html" id="nav-projects">Projects</a>
+                <a class="nav-services" href="./contactUsPage.html" id="nav-services">Services</a>
             </div>
             <div class="nav-contact">
                 <button class="blue-btn">Contact Us</button>
@@ -44,9 +44,9 @@
             </div>
             <div class="nav-second-row">
                 <div class="nav-menu">
-                    <a class="nav-home">Home</a>
-                    <a class="nav-projects">Projects</a>
-                    <a class="nav-services">Services</a>
+                    <a class="nav-home" href="./index.html">Home</a>
+                    <a class="nav-projects" href="./projectPage.html">Projects</a>
+                    <a class="nav-services" href="./contactUsPage.html">Services</a>
                 </div>
             </div>
         </nav>
@@ -57,23 +57,25 @@
     <div id="contact-us-page">
         <h2 class="contact-us-title">Contact Us</h2>
         <form class="contact-us-form">
-            <label for="name" required="true">Full Name <span>*</span></label>
+            <label for="name" id="name-lbl">Full Name</label>
             <input id="name" type="text" placeholder="Enter your full name" required />
             <div class="two-inputs">
                 <div class="input-column">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Enter your email address"/>
+                    <label for="email" id="email-lbl">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email address" required />
                 </div>
                 <div class="input-column">
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" placeholder="Enter your phone number" />
+                    <label for="phone" id="phone-lbl">Phone</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required />
                 </div>
-    
+
             </div>
-            <label for="message">Message</label>
+            <label for="message" id="message-lbl">Message</label>
             <textarea placeholder="Write your message here ..." id="message" rows="8"></textarea>
-            <input id="form-submit" type="button" value="Submit" />
+            <p id="warning"></p>
+            <input id="form-submit" type="button" value="Submit" required />
         </form>
+        
     </div>
 
     <div class="space-section-aux"></div>
@@ -102,6 +104,7 @@
             </div>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>

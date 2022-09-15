@@ -242,6 +242,7 @@ body {
     margin: 0;
     margin-left: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .project-card-first {

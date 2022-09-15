@@ -73,6 +73,7 @@ body {
     padding-left: 36px;
     padding-right: 36px;
     font-size: medium;
+    cursor: pointer;
 }
 
 .blue-btn:hover {

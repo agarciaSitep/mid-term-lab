@@ -36,7 +36,9 @@ body {
     display: none;
 }
 
-.navCircleLogo {}
+.navCircleLogo {
+    cursor: pointer;
+}
 
 .nav-menu {
     width: 20vw;
